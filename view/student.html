@@ -1,0 +1,96 @@
+<!-- 20. -->
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HelloCockatiel</title>
+
+    <script>
+        var count = 0;
+        function hideName() {
+            // 9.
+        }
+        function showName() {
+            // 10.
+        }
+        function changeImage() {
+            // 11.
+            document.getElementById('birdImage').src = "";
+        }
+        function changeImageBack() {
+            // 12.
+            document.getElementById('birdImage').src = "";
+        }
+        function changeBackground() {
+            document.getElementById('firstRow').className = "row bg-warning";
+        }
+        function changeBackgroundBack() {
+            document.getElementById('firstRow').className = "row";
+        }
+        function changeInputField() {
+            if (count == 0) {
+                document.getElementById('inputField').value = "Hi Little Bird We love you!"
+                count = 1;
+            } else {
+                // 13.
+                count = 0;
+            }
+        }
+    </script>
+</head>
+
+<body style="background-color: #d9e9cc">
+    <!-- 19. -->
+    <div class="">
+        <!-- 18. -->
+        <div class="">
+
+        </div>
+        <!-- 17. -->
+        <div class="">
+            <!-- 6. -->
+            <img onmouseover=changeImage() onmouseout=changeImageBack() src="" alt="birb" id="birdImage" 
+                width="auto" height="250px">
+        </div>
+    </div>
+    <div class="row" id="firstRow">
+        <!-- 14. -->
+        <div>
+            <div class="input-group">
+                <input id="inputField" type="text" class="form-control" placeholder="Click button to see magic"
+                    aria-label="Click button to see magic" aria-describedby="basic-addon2" disabled>
+                <div class="input-group-append">
+                    <!-- 7. -->
+                    <button class="btn btn-outline-secondary" type="button">Magic</button>
+                </div>
+            </div>
+        </div>
+        <!-- 15. -->
+        <div>
+            <!-- 3. -->
+            <button class="" onClick="">Show</button>
+            <!-- 4. -->
+            <button class="" onClick="">Hide</button>
+            <!-- 5. -->
+            <h2 id=''>Hi Little Birb</h2>
+        </div>
+        <!-- 16. -->
+        <div>
+            <!-- 1. -->
+            <button class="" onClick="">Change Row Color</button>
+            <!-- 2. -->
+            <button class="" onClick="">Back</button>
+        </div>
+    </div>
+</body>
