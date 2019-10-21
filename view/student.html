@@ -19,18 +19,16 @@
     <script>
         var count = 0;
         function hideName() {
-            // 9.
+            document.getElementById(Name).style.display = "none";
         }
         function showName() {
-            // 10.
+            document.getElementById(Name).style.display = "block"
         }
         function changeImage() {
-            // 11.
-            document.getElementById('birdImage').src = "";
+            document.getElementById('birdImage').src = "../img/user/profile.jpg";
         }
         function changeImageBack() {
-            // 12.
-            document.getElementById('birdImage').src = "";
+            document.getElementById('birdImage').src = "../img/hide.jpg";
         }
         function changeBackground() {
             document.getElementById('firstRow').className = "row bg-warning";
@@ -43,7 +41,7 @@
                 document.getElementById('inputField').value = "Hi Little Bird We love you!"
                 count = 1;
             } else {
-                // 13.
+                document.getElementById('inputField').value = " "
                 count = 0;
             }
         }
@@ -60,7 +58,7 @@
         <!-- 17. -->
         <div class="">
             <!-- 6. -->
-            <img onmouseover=changeImage() onmouseout=changeImageBack() src="" alt="birb" id="birdImage" 
+            <img onmouseover=changeImage() onmouseout=changeImageBack() src="" alt="bird" id="birdImage" 
                 width="auto" height="250px">
         </div>
     </div>
@@ -79,18 +77,18 @@
         <!-- 15. -->
         <div>
             <!-- 3. -->
-            <button class="" onClick="">Show</button>
+            <button onClick="">Show</button>
             <!-- 4. -->
-            <button class="" onClick="">Hide</button>
+            <button onClick="">Hide</button>
             <!-- 5. -->
             <h2 id=''>Hi Little Birb</h2>
         </div>
         <!-- 16. -->
-        <div>
+        <div class="col">
             <!-- 1. -->
-            <button class="" onClick="">Change Row Color</button>
+            <button onClick="">Change Row Color</button>
             <!-- 2. -->
-            <button class="" onClick="">Back</button>
+            <button onClick="">Back</button>
         </div>
     </div>
 </body>
