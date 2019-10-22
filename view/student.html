@@ -1,4 +1,5 @@
 <!-- 20. -->
+
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,18 +20,16 @@
     <script>
         var count = 0;
         function hideName() {
-            // 9.
+            document.getElementById(Name).style.display = "none";
         }
         function showName() {
-            // 10.
+            document.getElementById(Name).style.display = "block"
         }
         function changeImage() {
-            // 11.
-            document.getElementById('birdImage').src = "";
+            document.getElementById('birdImage').src = "../img/user/profile.jpg";
         }
         function changeImageBack() {
-            // 12.
-            document.getElementById('birdImage').src = "";
+            document.getElementById('birdImage').src = "../img/hide.jpg";
         }
         function changeBackground() {
             document.getElementById('firstRow').className = "row bg-warning";
@@ -43,7 +42,7 @@
                 document.getElementById('inputField').value = "Hi Little Bird We love you!"
                 count = 1;
             } else {
-                // 13.
+                document.getElementById('inputField').value = " "
                 count = 0;
             }
         }
@@ -51,46 +50,33 @@
 </head>
 
 <body style="background-color: #d9e9cc">
-    <!-- 19. -->
-    <div class="">
-        <!-- 18. -->
-        <div class="">
+    <div class="row">
+        <div class="col">
 
         </div>
-        <!-- 17. -->
-        <div class="">
-            <!-- 6. -->
-            <img onmouseover=changeImage() onmouseout=changeImageBack() src="" alt="birb" id="birdImage" 
-                width="auto" height="250px">
+        <div class="col -4">
+            <img onmouseover=changeImage() onmouseout=changeImageBack() src="" alt="bird" id="birdImage" width="auto"
+                height="250px">
         </div>
     </div>
     <div class="row" id="firstRow">
-        <!-- 14. -->
         <div>
             <div class="input-group">
                 <input id="inputField" type="text" class="form-control" placeholder="Click button to see magic"
                     aria-label="Click button to see magic" aria-describedby="basic-addon2" disabled>
                 <div class="input-group-append">
-                    <!-- 7. -->
-                    <button class="btn btn-outline-secondary" type="button">Magic</button>
+                    <button onclick=changeInputField() class="btn btn-outline-secondary" type="button">Magic</button>
                 </div>
             </div>
         </div>
-        <!-- 15. -->
         <div>
-            <!-- 3. -->
-            <button class="" onClick="">Show</button>
-            <!-- 4. -->
-            <button class="" onClick="">Hide</button>
-            <!-- 5. -->
-            <h2 id=''>Hi Little Birb</h2>
+            <button class="btn-primary" onClick="">Show</button>
+            <button class="btn-danger" onClick="">Hide</button>
+            <h2 id=''>Hi Little Bird</h2>
         </div>
-        <!-- 16. -->
         <div>
-            <!-- 1. -->
-            <button class="" onClick="">Change Row Color</button>
-            <!-- 2. -->
-            <button class="" onClick="">Back</button>
+            <button class="btn-warning" onClick="">Change Row Color</button>
+            <button class="btn-success" onClick="">Back</button>
         </div>
     </div>
 </body>
